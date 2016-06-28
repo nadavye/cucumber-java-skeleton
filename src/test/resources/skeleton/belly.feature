@@ -14,3 +14,8 @@ Feature: Belly
     Given I have 0 cukes in my belly
     When I wait 0 hour
     Then my belly should be smaller
+
+  Scenario: a fourth
+    Given I have 0 cukes in my belly
+    When I don't do nothing
+    Then my belly should be smaller
