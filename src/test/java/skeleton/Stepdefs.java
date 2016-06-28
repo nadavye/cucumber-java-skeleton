@@ -7,7 +7,7 @@ import cucumber.api.java.en.When;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
-public class StepDefinitions {
+public class Stepdefs {
     private Belly belly;
     private int waitingTime;
 
