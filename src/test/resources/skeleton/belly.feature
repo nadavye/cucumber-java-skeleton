@@ -4,3 +4,13 @@ Feature: Belly
     Given I have 42 cukes in my belly
     When I wait 1 hour
     Then my belly should growl
+    
+  Scenario: a another set of cukes
+    Given I have 20 cukes in my belly
+    When I wait 1 hour
+    Then my belly should growl
+
+  Scenario: a negative set of cukes
+    Given I have -20 cukes in my belly
+    When I wait -1 hour
+    Then my belly should be smaller
