@@ -60,7 +60,7 @@
 					-Dsl.server=https://dev-a-sealights.co/api
 					-Dsl.includes=*skeleton*
 					-Dsl.config.file=C:\Work\Playground\dropwizard-master\footprints_sealights.json  
-					-javaagent:"C:\Work\Projects\SL.OnPremise.Agents.Java\java-agent-bootstrapper\target\java-agent-bootstrapper-1.0.0-SNAPSHOT.jar"
+					<!-- -javaagent:"C:\Work\Projects\SL.OnPremise.Agents.Java\java-agent-bootstrapper\target\java-agent-bootstrapper-1.0.0-SNAPSHOT.jar"-->
 				</argLine>
 			</configuration>
 		</plugin>
