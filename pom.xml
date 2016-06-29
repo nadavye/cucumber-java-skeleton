@@ -43,7 +43,7 @@
                  <plugin>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-surefire-plugin</artifactId>
-			<version>2.19.1</version> <!-- TODO: Most probably you should stil use the same version that you own. Make sure to be up-to-date. -->
+			<version>2.19.1</version> 
 			<configuration>
 				<additionalClasspathElements>				
 					<additionalClasspathElement>C:\Work\Projects\SL.OnPremise.Agents.Java\java-agent-api\target\java-agent-api-1.0.0-SNAPSHOT.jar</additionalClasspathElement>						
