@@ -40,6 +40,30 @@
 
     <build>
         <plugins>
+                 <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-plugin</artifactId>
+			<version>2.19.1</version> <!-- TODO: Most probably you should stil use the same version that you own. Make sure to be up-to-date. -->
+			<configuration>
+				<additionalClasspathElements>				
+					<additionalClasspathElement>C:\Work\Projects\SL.OnPremise.Agents.Java\java-agent-api\target\java-agent-api-1.0.0-SNAPSHOT.jar</additionalClasspathElement>						
+				</additionalClasspathElements>
+				
+				<argLine> 
+					-Dsl.appendToSystemClassLoader=true 
+					-Dsl.log.enabled=false 
+					-Dsl.log.level=info 
+					-Dsl.log.toFile=true 
+					-Dsl.log.folder=c:\temp\logs-123\ 
+					-Dsl.customerId=cucumber
+					-Dsl.appName=cucumber-java-skeleton
+					-Dsl.server=https://dev-a-sealights.co/api
+					-Dsl.includes=*skeleton*
+					-Dsl.config.file=C:\Work\Playground\dropwizard-master\footprints_sealights.json  
+					-javaagent:"C:\Work\Projects\SL.OnPremise.Agents.Java\java-agent-bootstrapper\target\java-agent-bootstrapper-1.0.0-SNAPSHOT.jar"
+				</argLine>
+			</configuration>
+		</plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
