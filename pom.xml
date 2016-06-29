@@ -39,7 +39,7 @@
     </dependencies>
 
     <build>
-        <plugins>
+        <plugins><!-- 
                  <plugin>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-surefire-plugin</artifactId>
@@ -60,10 +60,10 @@
 					-Dsl.server=https://dev-a-sealights.co/api
 					-Dsl.includes=*skeleton*
 					-Dsl.config.file=C:\Work\Playground\dropwizard-master\footprints_sealights.json  
-					<!-- -javaagent:"C:\Work\Projects\SL.OnPremise.Agents.Java\java-agent-bootstrapper\target\java-agent-bootstrapper-1.0.0-SNAPSHOT.jar"-->
+					-javaagent:"C:\Work\Projects\SL.OnPremise.Agents.Java\java-agent-bootstrapper\target\java-agent-bootstrapper-1.0.0-SNAPSHOT.jar"
 				</argLine>
 			</configuration>
-		</plugin>
+		</plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
