@@ -25,7 +25,7 @@ public class Stepdefs {
     @Then("^my belly should (.*)$")
     public void my_belly_should_growl(String expectedSound) throws Throwable {
         String actualSound = belly.getSound(waitingTime);
-        actualSound = "wrong value";
+        //actualSound = "wrong value";
         assertThat(actualSound, is(expectedSound));
     }
 }
